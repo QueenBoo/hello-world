@@ -1,0 +1,117 @@
+:root {
+	--black: #000000;
+	--grey: #999999;
+    --blue: #5158b1;
+    --darkgreen: #40523f;
+    --lightgreen: #c5d9c6;
+    --darkred: #ea4355;
+    --pink: #f5a19a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: #eee;
+}
+
+header {
+	background-color: var(--grey);
+}
+
+a.logo {
+	font-weight: 800;
+	font-size: 1.3rem;
+}
+
+a.menu {
+	display: block;
+	color: var(--blue);
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0.5rem 1rem;
+}
+
+/* Hide navBar by default in the big code: */
+
+nav.navbar {
+	display: none;
+}  
+
+/* When nav has the class of open, display the menu items/links  */
+nav.navbar.open {
+	display: block;
+}
+
+
+ul.navbar-list li {
+	list-style: none;
+}
+
+a.logo,
+ul.navbar-list li a {
+	text-decoration: none;
+	color: var(--blue);
+	padding: 0.8rem 1rem;
+	display: block; /* default is inline element, display:block makes <a> to be width: 100% */
+}
+
+ul.navbar-list li a:hover {
+	background-color: gray;
+}
+
+@media screen and (min-width: 768px) {
+	header {
+		display: flex;
+	}
+
+	a.menu {
+		display: none;
+	}
+
+	ul.navbar-list {
+		display: flex;
+		justify-content: space-around;
+		font-size: 1.25rem;
+	}
+
+	a.logo {
+		flex: 1;
+	}
+
+	nav.navbar {
+		flex: 2;
+		display: block;
+	}
+}
+
+.homepage-flex {
+    display: flex;
+    background-color: var(--lightgreen);
+    justify-content: space-around;
+  }
+  
+  .homepage-flex > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size:1.25rem;
+    border-radius: 25px;
+  }
+
+/* footer */
+
+footer {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}

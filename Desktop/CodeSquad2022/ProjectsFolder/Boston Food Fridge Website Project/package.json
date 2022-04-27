@@ -1,0 +1,28 @@
+{
+  "name": "boston-food-fridge-website-project",
+  "version": "1.0.0",
+  "description": "Boston Food Fridge - A Website to Compile Local Boston Fridges and Their Inventories",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QueenBoo/CodeSquadProject2022.git"
+  },
+  "keywords": [
+    "codesquad",
+    "boston",
+    "food-fridge"
+  ],
+  "author": "BFG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QueenBoo/CodeSquadProject2022/issues"
+  },
+  "homepage": "https://github.com/QueenBoo/CodeSquadProject2022#readme",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.0"
+  }
+}
