@@ -1,0 +1,33 @@
+<!-- How I will set up my data: -->
+
+<!-- Name of Fridge:
+Location:
+Social Media:
+Food Status:
+Details: -->
+
+const mongoose = require('mongoose');
+const {Schema} = mongoose;
+
+const fridgeSchema = new Schema({
+    fridgeName: {
+        type: String,
+        required:[true, 'Please list the name of the fridge.'],
+        minlength:[1, 'Minimum length for fridge name is 1 character.']
+    },
+    fridgeLocation: {
+        type: String,
+        required: [true, 'A location is required'],
+        minlength: [1,'Minimum length for fridge location is 1 character.']
+    },
+    fridgeURL: {
+        type: String,
+        required: [true, 'A URL or link to Social Media is required'],
+        minlength: [1, 'Minimum length for fridge URL is 1 character.']
+    },
+    fridgeFoodStatus: {
+        type: boolian,
+        required: [true, 'A location is required'],
+        minlength: [1, 'Minimum length for fridge location is 1 character.']
+    },
+})

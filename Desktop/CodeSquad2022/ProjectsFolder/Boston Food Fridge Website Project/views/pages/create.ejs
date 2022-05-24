@@ -1,0 +1,36 @@
+<%- include('../partials/head') -%> 
+    
+<%- include('../partials/navigation') -%> 
+
+<main>
+    
+    <h1>This Is The Create Page</h1>
+
+    <h1 class="heading"> <span>Add a new Fridge</span> </h1>
+    <form action="/fridges" method="POST">
+      <div>
+          <label for="fridgeName">Name of Fridge: </label>
+          <input type="text" name="fridgeName" id="fridgeName" minlength="1" required />
+      </div>
+  
+      <div>
+          <label for="fridgeLocation">Location/Address: </label>
+          <input type="text" name="fridgeLocation" id="fridgeLocation" minlength="3" required />
+      </div>
+  
+      <div>
+          <label for="web-data">URL/Link/Social Media: </label>
+          <input type="text" name="web-data" id="web-data" min="1" required />
+      </div>
+  
+      <div>
+          <label for="fridgeFoodStatus">Food Status:</label>
+          <textarea class="text" name="fridgeFoodStatus" id="fridgeFoodStatus" placeholder="Synopsis"></textarea>
+      </div>
+  
+      <div>
+          <input type="submit" value="Submit"/>
+      </div>
+
+
+<%- include('../partials/footer') -%> 
